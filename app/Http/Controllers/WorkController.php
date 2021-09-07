@@ -34,5 +34,12 @@ class WorkController extends Controller
         $works = Work::find($id);
         return view('works.show', compact('works'));
     }
+    
+    public function delete($id)
+    {
+        $works = Work::find($id);
+        $works->delete();
+        return redirect('works');
+    }
 }
  

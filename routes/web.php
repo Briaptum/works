@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\WorkController;
+use App\Http\Controllers\PhpController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,4 +29,12 @@ Route::get('/works', [WorkController::class, 'index']);
 Route::get('/works/create', [WorkController::class, 'create']);
 Route::post('/works', [WorkController::class, 'store']);
 Route::get('/works/{id}', [WorkController::class, 'show']);
+Route::get('/works/delete/{id}', [WorkController::class, 'delete']);
 
+
+
+
+
+
+
+Route::get('/php', [PhpController::class, 'php']);
