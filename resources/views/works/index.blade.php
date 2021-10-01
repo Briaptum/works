@@ -9,7 +9,7 @@
 
     <title>Document</title>
 </head>
-<body class="min-h-screen bg-gray-100">
+<body  class="min-h-screen bg-gray-100">
     <a href="works/create">Add Stories</a>
     @foreach ($works as $work)
     <div>
